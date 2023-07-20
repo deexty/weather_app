@@ -1,0 +1,135 @@
+.AppBodyContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh);
+}
+
+.AppContainer{
+    height: 220px;
+    width: 375px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.inputContainer{
+    top: calc(50% - 40px);
+    transition: 1s;
+    width: 375px;
+    position: absolute;
+    background-color: #808080;
+    padding: .5rem 22px;
+    box-sizing: border-box;
+    border-radius: 10px ;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.inputContainer > div{
+    position: absolute;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.inputContainer > input{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    color: #FFF;
+    border-bottom: 1px solid #FFF;
+    padding: .25rem;
+    padding-left: 1.5rem;
+}
+
+.inputContainer > input::placeholder{
+    color: #FFF;
+}
+
+.infoContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoContainer > img{
+    align-self: center;
+    margin-top: 1.5rem;
+    animation: animationTop 1.5s normal;
+}
+
+.topInfo{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #808080;
+    padding: 32px 22px;
+    position: relative;
+    border-radius: 0 0 20px 20px;
+    animation: animationTop 1.5s normal;
+    transition: 1.5s;
+}
+
+.topInfo > p{
+    color: #FFF;
+    font-size: 18px;
+}
+
+.topInfo > h1{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFF;
+    line-height: 1.2rem;
+}
+
+.topInfo > img{
+    position: absolute; 
+    align-self: flex-end;
+    right: 22px;
+    top: 32px;
+    width: 60px;
+    height: 60px;
+}
+
+.topInfo > ul{
+    display: flex;
+    align-self: center;
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.topInfo > ul > li{
+    margin-right: 1rem;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+.topInfo > ul > li:last-child{
+    margin: 0;
+}
+
+.topInfo > ul > li > p{
+    margin-left: .25rem;
+}
+
+@keyframes animationTop {
+    0%{
+        transform: translate(0, -100%);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
