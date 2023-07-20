@@ -7,9 +7,6 @@ function App() {
   const [inputValue, setInputValue] = useState("");
   const [dataClima, setDataClima] = useState(null);
   const [estado, setEstado] = useState("Rain");
-  const [erroGer, setErroGet] = useState("false")
-
-
   const inputSearch = document.querySelector("#inputSearch");
 
   const buscaData = (dt) =>{
@@ -97,7 +94,7 @@ function App() {
                 setTimeout(() =>{
                   fetchApiClima()
                   inputSearch.parentNode.style.borderRadius = '10px 10px 0 0'
-                },500)
+                },400)
               }else{
                 fetchApiClima()
               }
@@ -110,18 +107,18 @@ function App() {
               <h1>{dataClima.name}</h1>
               <p>{buscaData(dataClima.dt)}</p>
               <p style={{lineHeight: '1rem'}}>{dataClima.weather[0].description}</p>
-              <img src={`/assets/icons/${dataClima.weather[0].main}.svg`}></img>
+              <img src={`/assets/icons/${dataClima.weather[0].main}.svg`} alt={`${dataClima.weather[0].main} icon`}></img>
               <ul>
                 <li>
-                  <img src="/assets/icons/humidityIcon.svg"></img>
+                  <img src="/assets/icons/humidityIcon.svg" alt="icon humidade"></img>
                   <p>{`${dataClima.main.humidity}%`}</p>
                 </li>
                 <li>
-                  <img src="/assets/icons/temperatureIcon.svg"></img>
+                  <img src="/assets/icons/temperatureIcon.svg" alt="icon temperatura"></img>
                   <p>{`${dataClima.main.temp}°`}</p>
                 </li>
                 <li>
-                  <img src="/assets/icons/windIcon.svg"></img>
+                  <img src="/assets/icons/windIcon.svg" alt="icon velocidade dos ventos"></img>
                   <p>{`${dataClima.wind.speed}m/s`}</p>
                 </li>
               </ul>
