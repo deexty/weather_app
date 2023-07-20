@@ -1,70 +1,27 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Descrição do Projeto: Aplicativo de Previsão do Tempo com OpenWeatherAPI
 
-In the project directory, you can run:
+O projeto consiste em um aplicativo de previsão do tempo que utiliza a OpenWeatherAPI para obter informações meteorológicas de diferentes cidades. Desenvolvido com tecnologias web, incluindo React.js para a parte do front-end e JavaScript, HTML e CSS para a interface, o aplicativo oferece uma experiência intuitiva e amigável aos usuários.
 
-### `npm start`
+Recursos Principais:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Pesquisa de Cidades: Os usuários podem inserir o nome de uma cidade em um campo de pesquisa para encontrar a previsão do tempo daquela localidade.
+Exibição de Dados Meteorológicos: O aplicativo mostra as condições atuais, temperatura, umidade, velocidade do vento e outras informações relevantes sobre o clima da cidade pesquisada.
+Previsão para os Próximos Dias: Os usuários também têm acesso à previsão do tempo para os próximos dias, permitindo que planejem suas atividades de acordo com as condições climáticas esperadas.
+Design Responsivo: O aplicativo é totalmente responsivo, adaptando-se automaticamente a diferentes tamanhos de tela, como smartphones, tablets e computadores.
+Ícones Ilustrativos: Para tornar a experiência mais visual e informativa, são exibidos ícones ilustrativos que representam o estado do tempo (sol, nuvens, chuva etc.).
+Tecnologias Utilizadas:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React.js: Utilizado para criar a estrutura do aplicativo e gerenciar os componentes de forma eficiente.
+JavaScript: Responsável pela interatividade e manipulação dos dados da API.
+HTML: Utilizado para construir a estrutura do aplicativo.
+CSS: Responsável pelo estilo e aparência do aplicativo, garantindo uma experiência visual agradável.
+Funcionamento:
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+O usuário acessa o aplicativo e é recebido com uma interface simples e amigável.
+Ele insere o nome da cidade que deseja consultar na barra de pesquisa.
+O aplicativo faz uma chamada à OpenWeatherAPI para obter os dados meteorológicos da cidade especificada.
+Os dados são exibidos na tela, mostrando as condições climáticas atuais e a previsão para os próximos dias.
+O usuário pode repetir o processo quantas vezes desejar, pesquisando diferentes cidades e obtendo as informações meteorológicas correspondentes.
+Com este projeto, os usuários podem ficar informados sobre as condições climáticas de suas cidades ou de outras localidades, tornando o aplicativo útil para o dia a dia e o planejamento de atividades ao ar livre. A integração com a OpenWeatherAPI permite que o aplicativo exiba informações precisas e atualizadas, proporcionando uma experiência confiável e satisfatória aos usuários.
